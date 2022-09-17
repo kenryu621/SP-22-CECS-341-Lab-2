@@ -1,0 +1,703 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 13404
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Feb 06 15:19:06 PST 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 2560x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	D:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kenry
+User home directory: C:/Users/kenry
+User working directory: C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2021.1
+RDI_DATADIR: D:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: D:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/kenry/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/kenry/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/kenry/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	D:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/vivado.log
+Vivado journal file: 	C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/vivado.jou
+Engine tmp dir: 	C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/.Xil/Vivado-13404-Kenry-PC
+
+Xilinx Environment Variables
+----------------------------
+ANDROID_SDK_HOME: C:\Android
+XILINX: D:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2021.1
+XILINX_VIVADO: D:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,146 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\kenry\OneDrive - CSULB\2021 - 2022\Spring 2022\CECS 341\Lab 2\lab_2\lab_2.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 87 MB (+89179kb) [00:00:10]
+// [Engine Memory]: 1,146 MB (+1050393kb) [00:00:10]
+// [GUI Memory]: 108 MB (+17411kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2235 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 62 MB. Current time: 2/6/22, 3:19:09 PM PST
+// Project name: lab_2; location: C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2; part: xc7k70tfbv676-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1137.836 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 138 MB (+25114kb) [00:00:16]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 146 MB (+1272kb) [00:00:20]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f1 (f1.v)]", 1, false); // D
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // o
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // o
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // o
+// A (cs): Elaborate Design: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7k70tfbv676-1 Top: f1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: ELABORATE_START
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f1 (f1.v)]", 1, false); // D
+// [Engine Memory]: 1,235 MB (+32679kb) [00:01:21]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f1 (f1.v)]", 1, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 154 MB (+561kb) [00:01:22]
+// [Engine Memory]: 1,356 MB (+62462kb) [00:01:22]
+// WARNING: HEventQueue.dispatchEvent() is taking  1179 ms.
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7k70tfbv676-1 
+// Tcl Message: INFO: [Synth 8-2350] module f1 ignored due to previous errors [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v:23] 
+// Tcl Message: Failed to read verilog 'C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v' 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 22 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// W (cs): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,410 MB. GUI used memory: 86 MB. Current time: 2/6/22, 3:20:23 PM PST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // W
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // o
+// bz (cs):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7k70tfbv676-1 Top: f1 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Synth 8-2350] module f1 ignored due to previous errors [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v:23] 
+// Tcl Message: Failed to read verilog 'C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v' 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 22 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// [Engine Memory]: 1,425 MB (+1620kb) [00:01:34]
+// W (cs): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bz
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // W
+selectCodeEditor("f1.v", 105, 334); // bP
+selectCodeEditor("f1.v", 108, 332); // bP
+selectCodeEditor("f1.v", 112, 335); // bP
+selectCodeEditor("f1.v", 110, 349); // bP
+selectCodeEditor("f1.v", 290, 310); // bP
+selectCodeEditor("f1.v", 112, 367); // bP
+selectCodeEditor("f1.v", 152, 384); // bP
+selectCodeEditor("f1.v", 273, 283); // bP
+selectCodeEditor("f1.v", 190, 381); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f2 (f2.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f1 (f1.v)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f1 (f1.v)]", 1, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f2 (f2.v)]", 2, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f2 (f2.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f2 (f2.v)]", 2, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("f2.v", 156, 403); // bP
+selectCodeEditor("f2.v", 112, 383); // bP
+selectCodeEditor("f2.v", 113, 369); // bP
+selectCodeEditor("f2.v", 420, 339); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("f2.v", 521, 414); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, f1 (f1.v)]", 1, false); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // o
+// bz (cs):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7k70tfbv676-1 Top: f1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,492 MB. GUI used memory: 92 MB. Current time: 2/6/22, 3:21:13 PM PST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,535 MB. GUI used memory: 92 MB. Current time: 2/6/22, 3:21:15 PM PST
+// [Engine Memory]: 1,536 MB (+41675kb) [00:02:17]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 166 MB (+4231kb) [00:02:18]
+// [Engine Memory]: 1,623 MB (+9979kb) [00:02:18]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1770 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1546.070 ; gain = 11.871 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'f1' [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v:23] INFO: [Synth 8-6155] done synthesizing module 'f1' (1#1) [C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1606.520 ; gain = 72.320 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1606.520 ; gain = 72.320 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1606.520 ; gain = 72.320 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1606.520 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1686.180 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1758.766 ; gain = 224.566 
+// Tcl Message: 4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1758.766 ; gain = 224.566 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [GUI Memory]: 174 MB (+467kb) [00:02:19]
+dismissDialog("Open Elaborated Design"); // bz
+// Elapsed time: 83 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "f2.v", 3); // m
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectCodeEditor("f2.v", 215, 392); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // o
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "f1.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "f2.v", 3); // m
+// Elapsed time: 68 seconds
+selectCodeEditor("f2.v", 798, 306); // bP
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_SCAN_AND_ADD_RTL_INCLUDE_FILES_INTO, "Scan and add RTL include files into project", true); // g: TRUE
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "f1_tb"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new 
+// Tcl Command: 'file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new'
+// Tcl Message: file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new 
+// Tcl Command: 'file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new'
+// Tcl Command: 'file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new'
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 13 seconds
+// Tcl Command: 'file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new'
+// Tcl Message: file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new 
+// Tcl Message: file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new 
+dismissDialog("Add Sources"); // c
+// Tcl Message: file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Command: 'file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new'
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// bz (cs):  Add Simulation Sources  : addNotify
+// Tcl Message: file mkdir C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new 
+// Tcl Message: file mkdir {C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new} 
+// Tcl Message: close [ open {C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new/f1_tb.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 {{C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new/f1_tb.v}} 
+// I (cs): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bz
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1_tb (f1_tb.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1_tb (f1_tb.v)]", 7, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1115 ms.
+// Elapsed time: 101 seconds
+selectCodeEditor("f1_tb.v", 131, 395); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("f1_tb.v", 105, 398); // bP
+selectCodeEditor("f1_tb.v", 48, 398); // bP
+selectCodeEditor("f1_tb.v", 92, 404); // bP
+// Elapsed time: 108 seconds
+selectCodeEditor("f1_tb.v", 94, 448); // bP
+selectCodeEditor("f1_tb.v", 101, 443); // bP
+selectCodeEditor("f1_tb.v", 114, 446); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("f1_tb.v", 111, 442); // bP
+selectCodeEditor("f1_tb.v", 120, 436); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 150 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "f1.v", 2); // m
+// [GUI Memory]: 183 MB (+275kb) [00:13:31]
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1_tb (f1_tb.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1_tb (f1_tb.v)]", 7, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("f1_tb.v", 144, 472); // bP
+selectCodeEditor("f1_tb.v", 61, 494); // bP
+selectCodeEditor("f1_tb.v", 50, 499); // bP
+selectCodeEditor("f1_tb.v", 74, 490); // bP
+selectCodeEditor("f1_tb.v", 54, 499); // bP
+selectCodeEditor("f1_tb.v", 127, 451); // bP
+selectCodeEditor("f1_tb.v", 107, 453); // bP
+selectCodeEditor("f1_tb.v", 106, 439); // bP
+selectCodeEditor("f1_tb.v", 104, 472); // bP
+selectCodeEditor("f1_tb.v", 99, 443); // bP
+selectCodeEditor("f1_tb.v", 106, 432); // bP
+selectCodeEditor("f1_tb.v", 138, 464); // bP
+selectCodeEditor("f1_tb.v", 120, 439); // bP
+selectCodeEditor("f1_tb.v", 119, 432); // bP
+selectCodeEditor("f1_tb.v", 130, 398); // bP
+selectCodeEditor("f1_tb.v", 56, 450); // bP
+selectCodeEditor("f1_tb.v", 42, 451); // bP
+selectCodeEditor("f1_tb.v", 127, 473); // bP
+selectCodeEditor("f1_tb.v", 78, 478); // bP
+selectCodeEditor("f1_tb.v", 42, 448); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1 (f1.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1 (f1.v)]", 6, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1_tb (f1_tb.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1_tb (f1_tb.v)]", 7, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("f1_tb.v", 167, 418); // bP
+selectCodeEditor("f1_tb.v", 170, 392); // bP
+selectCodeEditor("f1_tb.v", 109, 446); // bP
+// Elapsed time: 240 seconds
+selectCodeEditor("f1_tb.v", 101, 434); // bP
+selectCodeEditor("f1_tb.v", 106, 419); // bP
+typeControlKey((HResource) null, "f1_tb.v", 'v'); // bP
+selectCodeEditor("f1_tb.v", 130, 414); // bP
+selectCodeEditor("f1_tb.v", 181, 428); // bP
+selectCodeEditor("f1_tb.v", 164, 450); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("f1_tb.v", 0, 419); // bP
+selectCodeEditor("f1_tb.v", 175, 428); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("f1_tb.v", 128, 455); // bP
+// Elapsed time: 62 seconds
+selectCodeEditor("f1_tb.v", 122, 516); // bP
+selectCodeEditor("f1_tb.v", 291, 509); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("f1_tb.v", 317, 517); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("f1_tb.v", 226, 373); // bP
+selectCodeEditor("f1_tb.v", 289, 506); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("f1_tb.v", 284, 449); // bP
+// Elapsed time: 68 seconds
+selectCodeEditor("f1_tb.v", 111, 472); // bP
+selectCodeEditor("f1_tb.v", 107, 482); // bP
+selectCodeEditor("f1_tb.v", 101, 504); // bP
+selectCodeEditor("f1_tb.v", 116, 477); // bP
+// Elapsed time: 41 seconds
+selectCodeEditor("f1_tb.v", 95, 362); // bP
+selectCodeEditor("f1_tb.v", 95, 361); // bP
+selectCodeEditor("f1_tb.v", 93, 363, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("f1_tb.v", 172, 481); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("f1_tb.v", 121, 313); // bP
+selectCodeEditor("f1_tb.v", 105, 314); // bP
+selectCodeEditor("f1_tb.v", 113, 321); // bP
+selectCodeEditor("f1_tb.v", 168, 401); // bP
+selectCodeEditor("f1_tb.v", 169, 399); // bP
+selectCodeEditor("f1_tb.v", 149, 498); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("f1_tb.v", 248, 482); // bP
+typeControlKey((HResource) null, "f1_tb.v", 'c'); // bP
+selectCodeEditor("f1_tb.v", 133, 522); // bP
+selectCodeEditor("f1_tb.v", 123, 520); // bP
+typeControlKey((HResource) null, "f1_tb.v", 'v'); // bP
+selectCodeEditor("f1_tb.v", 146, 523); // bP
+selectCodeEditor("f1_tb.v", 184, 516); // bP
+selectCodeEditor("f1_tb.v", 191, 517); // bP
+selectCodeEditor("f1_tb.v", 161, 490); // bP
+selectCodeEditor("f1_tb.v", 154, 522); // bP
+selectCodeEditor("f1_tb.v", 158, 517); // bP
+selectCodeEditor("f1_tb.v", 171, 517); // bP
+selectCodeEditor("f1_tb.v", 177, 524); // bP
+selectCodeEditor("f1_tb.v", 161, 520); // bP
+selectCodeEditor("f1_tb.v", 134, 488); // bP
+selectCodeEditor("f1_tb.v", 141, 483); // bP
+selectCodeEditor("f1_tb.v", 308, 524); // bP
+typeControlKey((HResource) null, "f1_tb.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("f1_tb.v", 270, 485); // bP
+typeControlKey((HResource) null, "f1_tb.v", 'c'); // bP
+selectCodeEditor("f1_tb.v", 149, 525); // bP
+typeControlKey((HResource) null, "f1_tb.v", 'v'); // bP
+selectCodeEditor("f1_tb.v", 146, 519); // bP
+selectCodeEditor("f1_tb.v", 181, 522, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("f1_tb.v", 147, 517); // bP
+selectCodeEditor("f1_tb.v", 332, 517); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,661 MB. GUI used memory: 125 MB. Current time: 2/6/22, 3:43:38 PM PST
+// Elapsed time: 78 seconds
+selectCodeEditor("f1_tb.v", 202, 519); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("f1_tb.v", 495, 458); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("f1_tb.v", 109, 502); // bP
+selectCodeEditor("f1_tb.v", 99, 445); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, f1_tb (f1_tb.v)]", 7, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // an
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top f1_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// am (cs): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cs):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (cs):  Run Simulation : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj f1_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module f1 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new/f1_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module f1_tb INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 8dfd173539b2461a852d6f8fdbace829 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot f1_tb_behav xil_defaultlib.f1_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.  
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "f1_tb_behav -key {Behavioral:sim_1:Functional:f1_tb} -tclbatch {f1_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,678 MB. GUI used memory: 131 MB. Current time: 2/6/22, 3:45:26 PM PST
+// Tcl Message: source f1_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: time =     5.0ns  A=00  B=00  C=00||  Output=zz0 time =    10.0ns  A=00  B=00  C=01||  Output=zz1 time =    15.0ns  A=00  B=01  C=00||  Output=zz0 time =    20.0ns  A=00  B=01  C=01||  Output=zz1 time =    25.0ns  A=01  B=00  C=00||  Output=zz1 time =    30.0ns  A=01  B=00  C=01||  Output=zz0 time =    35.0ns  A=01  B=01  C=00||  Output=zz1 time =    40.0ns  A=01  B=01  C=01||  Output=zz1 $finish called at time : 40 ns : File "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new/f1_tb.v" Line 45 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'f1_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1802.863 ; gain = 18.461 
+// 'd' command handler elapsed time: 13 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectCodeEditor("f1_tb.v", 309, 365); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("f1_tb.v", 71, 110); // bP
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aE
+selectCodeEditor("f1_tb.v", 79, 96); // bP
+selectCodeEditor("f1_tb.v", 61, 93); // bP
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aE
+// Run Command: PAResourceCommand.PACommandNames_SHOW_RTL_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// c (cs): Save Simulation Sources: addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+// bz (cs):  Close : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Simulation Sources"); // c
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cs):  Run Simulation : addNotify
+dismissDialog("Close"); // bz
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: "xvlog --incr --relax -prj f1_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sources_1/new/f1.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module f1 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new/f1_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module f1_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 8dfd173539b2461a852d6f8fdbace829 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot f1_tb_behav xil_defaultlib.f1_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "f1_tb_behav -key {Behavioral:sim_1:Functional:f1_tb} -tclbatch {f1_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,697 MB. GUI used memory: 137 MB. Current time: 2/6/22, 3:46:24 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source f1_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: time =     5.0ns  A=0  B=0  C=0||  Output=0 time =    10.0ns  A=0  B=0  C=1||  Output=1 time =    15.0ns  A=0  B=1  C=0||  Output=0 time =    20.0ns  A=0  B=1  C=1||  Output=1 time =    25.0ns  A=1  B=0  C=0||  Output=1 time =    30.0ns  A=1  B=0  C=1||  Output=0 time =    35.0ns  A=1  B=1  C=0||  Output=1 time =    40.0ns  A=1  B=1  C=1||  Output=1 $finish called at time : 40 ns : File "C:/Users/kenry/OneDrive - CSULB/2021 - 2022/Spring 2022/CECS 341/Lab 2/lab_2/lab_2.srcs/sim_1/new/f1_tb.v" Line 45 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'f1_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1807.332 ; gain = 4.469 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectCodeEditor("f1_tb.v", 227, 315); // bP
+selectCodeEditor("f1_tb.v", 359, 261); // bP
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 649, 15); // dS
+// [GUI Memory]: 193 MB (+468kb) [00:41:49]
